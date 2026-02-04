@@ -23,6 +23,7 @@ main {
 
 .logo {
     margin-bottom: 3rem;
+    max-width: 400px;
 }
 
 .logo-image {
@@ -34,14 +35,14 @@ main {
 }
 
 .description {
-    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-size: 1rem;
     font-weight: 300;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
     line-height: 1.6;
 }
 
 .emojis {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: 1rem;
     display: flex;
     gap: 1rem;
     justify-content: center;
@@ -50,24 +51,30 @@ main {
 
 @media (max-width: 768px) {
     .logo {
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
+        max-width: 350px;
     }
 
-    main {
-        padding: 1.5rem;
+    .description {
+        font-size: 0.875rem;
+    }
+
+    .emojis {
+        font-size: 0.875rem;
     }
 }
 
 @media (max-width: 480px) {
     .logo {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
+        max-width: 300px;
     }
 
-    main {
-        padding: 1rem;
+    .description {
+        font-size: 0.75rem;
     }
 
     .emojis {
-        gap: 0.5rem;
+        font-size: 0.75rem;
     }
 }
