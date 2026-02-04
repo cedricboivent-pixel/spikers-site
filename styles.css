@@ -16,28 +16,58 @@ body {
 
 main {
     text-align: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-h1 {
-    font-size: 4rem;
-    font-weight: 900;
-    letter-spacing: 2px;
-    margin-bottom: 1rem;
+.logo {
+    margin-bottom: 3rem;
 }
 
-p {
-    font-size: 1.5rem;
+.logo-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.description {
+    font-size: clamp(1rem, 3vw, 1.5rem);
     font-weight: 300;
-    font-style: italic;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.emojis {
+    font-size: clamp(2rem, 5vw, 3rem);
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
+    .logo {
+        margin-bottom: 2rem;
     }
 
-    p {
-        font-size: 1.2rem;
-        font-style: italic;
+    main {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        margin-bottom: 1.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .emojis {
+        gap: 0.5rem;
     }
 }
